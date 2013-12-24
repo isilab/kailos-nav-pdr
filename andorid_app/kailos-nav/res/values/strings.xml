@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KAILOS D2D</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_drawer">Menu</string>
+    <string name="close_drawer">kalos-navi</string>
+	<string name="dummy"></string>
+    <!-- Drawer Menu Strings... -->
+    <string name="menu_search_poi">Search places</string>
+    <string name="menu_setting">Settings</string>
+</resources>

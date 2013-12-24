@@ -1,0 +1,116 @@
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	    <LinearLayout
+	        android:id="@+id/ll_keyword_from"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <TextView
+	            android:id="@+id/textView_from"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="From "            
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <EditText
+	            android:id="@+id/editText_from"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:ems="10"
+	            android:hint="Current location"
+	            android:singleLine="true"
+	            android:inputType="text"
+	            android:imeOptions="actionSearch">
+	        </EditText>
+
+		</LinearLayout>    	    	    
+	    <LinearLayout        
+	        android:id="@+id/ll_keyword_to"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/ll_keyword_from">
+	        
+	        <TextView
+	            android:id="@+id/textView_to"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="To   "            
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	        	        
+		    <EditText
+		        android:id="@+id/editText_to"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"        
+		        android:inputType="text"
+		        android:singleLine="true"
+		        android:imeOptions="actionSearch">
+		        <requestFocus />
+		    </EditText>
+		 </LinearLayout>
+		 
+		 <LinearLayout
+		    android:id="@+id/ll_place_list"
+		    android:layout_width="match_parent"
+		    android:layout_height="183dp"
+			android:layout_below="@+id/ll_keyword_to">
+		     <ListView
+		         android:id="@+id/listview_serach_results"
+		         android:layout_width="match_parent"
+		         android:layout_height="fill_parent" >
+		     </ListView>
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ll_splitter"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/ll_place_list">
+<!-- 	   	    <View
+	   	        android:id="@+id/view_splitter"
+	   	        android:layout_width="match_parent"
+	   	        android:layout_height="20dp"
+	   	        android:background="#B0E0E6" >
+		    </View> -->
+	        <TextView
+	            android:id="@+id/textView_resize"
+	            android:background="#B0E0E6"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Swipe here to resize"
+	            android:gravity="center"            
+	            android:textAppearance="?android:attr/textAppearanceMedium" />		    
+		</LinearLayout>
+		
+	    <LinearLayout
+	        android:id="@+id/ll_map"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/ll_splitter">
+
+		    <fragment
+		        android:id="@+id/map"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        class="com.google.android.gms.maps.MapFragment" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/ll_resizeing"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:visibility="invisible"
+	        android:layout_below="@+id/ll_splitter">
+	   	    <View
+	   	        android:id="@+id/view_resizing"
+	   	        android:layout_width="match_parent"
+	   	        android:layout_height="match_parent"
+	   	        android:layout_marginBottom="1dp"
+	   	        android:layout_marginTop="1dp"
+	   	        android:background="#6495ED" >		        
+		    </View>
+	    </LinearLayout>	    	    
+	</RelativeLayout>

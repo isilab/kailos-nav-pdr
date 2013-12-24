@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+    <string-array name="ns_menu">
+        <item>menu_search_poi</item>
+        <item>menu_setting</item>        
+    </string-array>
+
+    <array name="ns_menu_icon">
+        <item>ic_launcher</item>
+        <item>ic_launcher</item>
+    </array> 
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1" >
+    <LinearLayout>
+    	<TextView
+		    android:id="@+id/text_category"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="#696969"
+		    android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+		    android:id="@+id/text_building_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="#696969"
+		    android:textAppearance="?android:attr/textAppearanceSmall" />    		
+    	<TextView
+		    android:id="@+id/text_room_number"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="#696969"
+		    android:textAppearance="?android:attr/textAppearanceSmall" />
+	</LinearLayout>    	    		
+	<TextView
+	    android:id="@+id/text_poi_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#000000"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<!-- <LinearLayout
+		android:id="@+id/linearLayout_buttons"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone">
+		<Button
+		    android:id="@+id/btn_goto"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="GO TO" />	    
+		<Button
+		    android:id="@+id/btn_set_departre"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="DEPARTURE"
+		    android:textAppearance="?android:attr/textAppearanceSmall" />
+		<Button
+		    android:id="@+id/btn_set_destination"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="DESTINATION"
+		    android:textAppearance="?android:attr/textAppearanceSmall"/>	    
+	</LinearLayout> -->
+</TableLayout>

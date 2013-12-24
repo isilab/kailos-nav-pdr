@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rltop"
+    android:layout_width="match_parent"   
+    android:layout_height="match_parent" >
+	<RelativeLayout
+	    android:id="@+id/map_root"
+	    android:layout_width="match_parent"   
+	    android:layout_height="match_parent">
+	</RelativeLayout>
+
+	<TextView
+ 	    android:id="@+id/textViewLocationIndicator"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="25dp"
+ 	    android:layout_alignParentLeft="true"
+ 	    android:layout_alignParentTop="true"
+ 	    android:background="#C8F1F1F1"
+ 	    android:gravity="center"
+ 	    android:visibility="invisible"/>
+ 	
+	<ImageButton
+	    android:id="@+id/image_button_track_location"
+	    android:contentDescription="@+id/dummy"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="35dp"
+	    android:scaleType="center"
+	    android:src="@drawable/ic_tracklocation" />
+	
+	<ImageButton
+	    android:id="@+id/image_button_go_to_current_location"
+	    android:contentDescription="@+id/dummy"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="75dp"
+	    android:scaleType="center"
+	    android:src="@drawable/ic_kailos_marker_20" /> 		
+
+	<ImageButton
+	    android:id="@+id/image_button_stop_navigation"
+	    android:contentDescription="@+id/dummy"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="115dp"
+	    android:scaleType="center"
+	    android:src="@drawable/ic_stop_navi" 
+	    android:visibility="invisible"/>	
+		    
+	<ImageButton
+	    android:id="@+id/image_button_start_navigation"
+	    android:contentDescription="@+id/dummy"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="155dp"
+	    android:scaleType="center"
+	    android:src="@drawable/ic_start_navi"
+	    android:visibility="invisible"/>	
+</RelativeLayout>

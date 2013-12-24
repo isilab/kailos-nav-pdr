@@ -1,0 +1,18 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Google WPS">
+        <CheckBoxPreference
+            android:key="checkbox_show_google_wps_result"
+            android:title="Show Google WPS location"
+            android:summary="Check if you want to see the latest location from Google WPS\n(For comparison)" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Wi-Fi">
+        <CheckBoxPreference
+            android:key="checkbox_only_scanning"
+            android:title="Use Wi-Fi only for scanning"
+            android:summary="Check if you want to use Wi-Fi only for scanning (Wi-Fi will be disconnected)" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>
